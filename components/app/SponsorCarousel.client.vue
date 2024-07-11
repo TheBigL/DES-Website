@@ -38,10 +38,7 @@ const modules = [Autoplay]
           slidesPerView: 6,
         },
       }"
-      :autoplay="{
-        delay: 2500,
-        disableOnInteraction: false,
-      }"
+
     >
       <SwiperSlide
         v-for="slide, index in sponsors"
