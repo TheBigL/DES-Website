@@ -82,7 +82,7 @@ defineOgImage({
     <section id="what-we-do">
       <div class="py-20 px-8 rounded-xl max-w-7xl mx-auto">
         <h2 class="text-center text-4xl font-bold mb-8">
-          What We Do
+          What I Do
         </h2>
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 place-items-center">
           <AppCardVertical

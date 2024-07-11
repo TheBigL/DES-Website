@@ -5,7 +5,23 @@ description: This component is responsible for rendering the sponsors carousel i
 
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue'
+
 import 'swiper/css'
+import { Autoplay } from 'swiper/modules'
+
+
+export default {
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      return {
+        modules: [Autoplay],
+      };
+    },
+  };
+
 </script>
 
 <template>
@@ -29,6 +45,10 @@ import 'swiper/css'
           slidesPerView: 6,
         },
       }"
+      :autoplay="{
+        delay: 2500,
+        disableOnInteraction: false,
+      }"
     >
       <SwiperSlide
         v-for="slide, index in sponsors"
@@ -48,3 +68,4 @@ import 'swiper/css'
     </Swiper>
   </section>
 </template>
+
